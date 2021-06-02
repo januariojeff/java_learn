@@ -4,20 +4,21 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
+		
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 	
 		String nome;
-		double a, b, total;
+		double salario, vendas, total;
 		
 		nome = sc.next();
-		a = sc.nextDouble();
-		b = sc.nextDouble();
+		salario = sc.nextDouble();
+		vendas = sc.nextDouble();
 				
-		total = a + b * 0.15;
+		total = salario + vendas * 0.15;
 		
 		
-		System.out.printf("TOTAL =  R$ %.2f\n", total);
+		System.out.printf("TOTAL =  R$ %.2f%n", total);
 		
 		sc.close();
 		
